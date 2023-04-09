@@ -33,6 +33,7 @@ app.get("/getblockinfo", async (req, res) => {
     });
 
     let blockNrOrParentHash = latestBlock.toJSON().block;
+
     let previousBlockInfo = [];
 
     for (let i = 0; i < 5; i++) {
